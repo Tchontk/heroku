@@ -61,5 +61,6 @@ app.get('/error', (req, res) => {
 })
 
 app.listen(port, () => {
+  console.log(process.env.PORT);
   console.log(`Server is listen on port ${port}`);
 })
