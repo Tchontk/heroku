@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   // console.log(`${req.method} -  ${req.url}`);
   // res.send('<h1>Hello Express !</h1>')
   res.render('home.hbs', {
